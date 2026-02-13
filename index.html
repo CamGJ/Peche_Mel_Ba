@@ -18,7 +18,8 @@
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#galerie">Nos Créations</a></li>
-                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#produits">Nos Produits</a></li>
+                <li><a href="#apropos">Notre Histoire</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-toggle" aria-label="Menu">
@@ -51,7 +52,205 @@
         </div>
     </section>
 
-    <!-- À Propos -->
+    <!-- Nos Produits par Catégories -->
+    <section id="produits" class="produits">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <p class="section-subtitle">Découvrez notre gamme de pâtisseries par catégorie</p>
+            
+            <!-- Tabs Navigation -->
+            <div class="categories-tabs">
+                <button class="category-tab active" data-category="gateaux-voyage">Gâteaux de Voyage</button>
+                <button class="category-tab" data-category="tarterie">Tarterie</button>
+                <button class="category-tab" data-category="entremet">Entremets</button>
+                <button class="category-tab" data-category="individuel">Individuels</button>
+            </div>
+
+            <!-- Gâteaux de Voyage -->
+            <div class="category-content active" id="gateaux-voyage">
+                <div class="produits-grid">
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/cookies1.jpeg" alt="Cookies">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Cookies Maison</h3>
+                            <p class="produit-description">Délicieux cookies aux pépites de chocolat, croustillants à l'extérieur et moelleux à l'intérieur.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/croissant1.jpeg" alt="Croissants">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Croissants Artisanaux</h3>
+                            <p class="produit-description">Croissants pur beurre, feuilletés et dorés, préparés selon la tradition française.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Lait</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/pain_au_chocolat1.jpeg" alt="Pain au chocolat">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Pain au Chocolat</h3>
+                            <p class="produit-description">Viennoiserie feuilletée garnie de deux barres de chocolat, idéale pour le petit-déjeuner.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Lait</span>
+                                <span class="allergene">Soja</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarterie -->
+            <div class="category-content" id="tarterie">
+                <div class="produits-grid">
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/tarte_aux_pommes1.jpeg" alt="Tarte aux pommes">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Tarte aux Pommes</h3>
+                            <p class="produit-description">Tarte fine aux pommes fraîches sur pâte sablée, légèrement caramélisée.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/tarte_citron_meringue1.jpeg" alt="Tarte citron meringuée">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Tarte Citron Meringuée</h3>
+                            <p class="produit-description">Crème au citron acidulée surmontée d'une meringue italienne légère et dorée.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entremets -->
+            <div class="category-content" id="entremet">
+                <div class="produits-grid">
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/foret_noire1.jpeg" alt="Forêt noire">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Forêt Noire</h3>
+                            <p class="produit-description">Gâteau au chocolat, chantilly et cerises griottines, un classique revisité.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                                <span class="allergene">Fruits à coque</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/flan1.jpeg" alt="Flan pâtissier">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Flan Pâtissier</h3>
+                            <p class="produit-description">Flan onctueux à la vanille Bourbon sur pâte brisée, cuit au four.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/galette_des_rois.jpeg" alt="Galette des rois">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Galette des Rois</h3>
+                            <p class="produit-description">Pâte feuilletée garnie de frangipane maison, parfumée à la vanille et aux amandes.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                                <span class="allergene">Fruits à coque</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individuels -->
+            <div class="category-content" id="individuel">
+                <div class="produits-grid">
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/gauffres1.jpeg" alt="Gaufres">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Gaufres Liégeoises</h3>
+                            <p class="produit-description">Gaufres moelleuses au sucre perlé, idéales pour une pause gourmande.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produit-card">
+                        <div class="produit-image">
+                            <img src="assets/photo/cookies2.jpeg" alt="Mini cookies">
+                        </div>
+                        <div class="produit-info">
+                            <h3>Mini Cookies Assortis</h3>
+                            <p class="produit-description">Assortiment de mini cookies : chocolat, pépites, noisettes et noix de pécan.</p>
+                            <div class="produit-allergenes">
+                                <span class="allergene-label">Allergènes:</span>
+                                <span class="allergene">Gluten</span>
+                                <span class="allergene">Œufs</span>
+                                <span class="allergene">Lait</span>
+                                <span class="allergene">Fruits à coque</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Histoire -->
     <section id="apropos" class="apropos">
         <div class="container">
             <div class="apropos-content">

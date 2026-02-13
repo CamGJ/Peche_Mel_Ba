@@ -13,6 +13,26 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+// Gestion des onglets de catégories de produits
+document.querySelectorAll('.category-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+        // Retirer la classe active de tous les onglets
+        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+        
+        // Ajouter la classe active à l'onglet cliqué
+        this.classList.add('active');
+        
+        // Masquer tous les contenus
+        document.querySelectorAll('.category-content').forEach(content => {
+            content.classList.remove('active');
+        });
+        
+        // Afficher le contenu correspondant
+        const categoryId = this.getAttribute('data-category');
+        document.getElementById(categoryId).classList.add('active');
+    });
+});
+
 // Charger les images de la galerie dynamiquement
 async function loadGalleryImages() {
     const galerieGrid = document.getElementById('galerieGrid');
