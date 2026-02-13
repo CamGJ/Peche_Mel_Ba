@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pêche Mel'Ba - Pâtisserie artisanale avec passion et créativité">
+    <title>Pêche Mel'Ba - Pâtisserie Artisanale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/Logo.jpeg" alt="Logo Pêche Mel'Ba" onerror="this.style.display='none'">
+                <span class="logo-text">Pêche Mel'Ba</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#galerie">Nos Créations</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue chez Pêche Mel'Ba</h1>
+            <p class="hero-subtitle">L'art de la pâtisserie artisanale</p>
+            <p class="hero-description">Des créations uniques, faites avec passion et des ingrédients de qualité</p>
+            <a href="#galerie" class="btn-primary">Découvrir nos créations</a>
+        </div>
+    </section>
+
+    <!-- Galerie -->
+    <section id="galerie" class="galerie">
+        <div class="container">
+            <h2>Nos Créations</h2>
+            <p class="section-subtitle">Découvrez quelques-unes de nos pâtisseries artisanales</p>
+            
+            <div class="galerie-grid" id="galerieGrid">
+                <!-- Les images seront chargées dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <!-- À Propos -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <div class="apropos-content">
+                <div class="apropos-text">
+                    <h2>Notre Histoire</h2>
+                    <p>
+                        Pêche Mel'Ba est née d'une passion pour la pâtisserie et le désir de créer 
+                        des moments de bonheur à travers des créations gourmandes et uniques.
+                    </p>
+                    <p>
+                        Chaque pâtisserie est réalisée avec soin, en utilisant des ingrédients 
+                        de qualité et des techniques artisanales pour vous offrir le meilleur.
+                    </p>
+                    <p>
+                        Notre boutique vous accueille pour découvrir nos créations et partager 
+                        notre amour de la pâtisserie.
+                    </p>
+                </div>
+                <div class="apropos-image">
+                    <div class="image-placeholder">
+                        <img width="85%" height="70%" src="assets/bienvenue.gif" alt="Bienvenue chez Pêche Mel'Ba">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <p class="section-subtitle">Passez nous voir ou contactez-nous pour vos commandes spéciales</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>123 Rue de la Pâtisserie<br>75000 Paris, France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:+33123456789">01 23 45 67 89</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@pechemelb.fr">contact@pechemelb.fr</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Mardi - Samedi : 9h00 - 19h00<br>Dimanche : 9h00 - 13h00<br>Lundi : Fermé</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telephone" placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pêche Mel'Ba</h3>
+                    <p>Pâtisserie artisanale avec passion</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Pinterest">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#galerie">Nos Créations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pêche Mel'Ba. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
